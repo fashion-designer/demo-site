@@ -13169,57 +13169,6 @@ be a descendant of the grid when it is being dragged.
   background-color: #00635a;
 }
 
-@media (min-width: 768px) {
-  .app.sidenav-toggled .app-content {
-    margin-left: 0;
-  }
-  .app.sidenav-toggled .app-sidebar {
-    left: -230px;
-  }
-  .app.sidenav-toggled .app-sidebar__overlay {
-    visibility: hidden;
-  }
-}
-
-
-
-.app-content {
-  min-height: calc(100vh - 50px);
-  margin-top: 50px;
-  padding: 30px;
-  background-color: #E5E5E5;
-  -webkit-transition: margin-left 0.3s ease;
-  -o-transition: margin-left 0.3s ease;
-  transition: margin-left 0.3s ease;
-}
-
-@media (min-width: 768px) {
-  .app-content {
-    margin-left: 230px;
-  }
-}
-
-@media (max-width: 767px) {
-  .app-content {
-    margin-top: 50px;
-    min-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .app-content {
-    padding: 15px;
-  }
-}
-
-@media print {
-  .app-content {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-  }
-}
-
 .light-text {
   font-weight: 300 !important;
 }
@@ -13593,64 +13542,6 @@ be a descendant of the grid when it is being dragged.
   font-size: 14px;
   margin-right: 5px;
   vertical-align: middle;
-}
-
-.app-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #FFF;
-  margin: -30px -30px 30px;
-  padding: 20px 30px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-@media print {
-  .app-title {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .app-title {
-    margin: -15px -15px 15px;
-    padding: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
-.app-title h1 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.app-title p {
-  margin-bottom: 0;
-  font-style: italic;
-}
-
-@media (max-width: 480px) {
-  .app-title p {
-    display: none;
-  }
 }
 
 .app-breadcrumb {
@@ -14748,4 +14639,18 @@ be a descendant of the grid when it is being dragged.
 
 .user .user-settings label {
   color: #666;
+}
+
+/*Do not remove*/
+
+@media (min-width: 768px) {
+  .app.sidenav-toggled .app-content {
+    margin-left: 0;
+  }
+  .app.sidenav-toggled .app-sidebar {
+    left: -230px;
+  }
+  .app.sidenav-toggled .app-sidebar__overlay {
+    visibility: hidden;
+  }
 }
